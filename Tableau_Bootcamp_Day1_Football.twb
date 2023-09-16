@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='First100Goals(1)' inline='true' name='federated.1n2ionu05lkulf1h97ids0uc8yjc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='First100Goals(1)' name='textscan.1ckg3if1jbz9bl11h1omf1dunx02'>
+            <connection class='textscan' directory='C:/Users/sxs230040/Downloads/Tableau bootcamp datasets' filename='First100Goals(1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ckg3if1jbz9bl11h1omf1dunx02' name='First100Goals(1).csv' table='[First100Goals(1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Goal Number' ordinal='0' />
+            <column datatype='string' name='Goal Number (group)' ordinal='1' />
+            <column datatype='date' name='Goal Date' ordinal='2' />
+            <column datatype='string' name='Goal Type' ordinal='3' />
+            <column datatype='string' name='Scorer Name' ordinal='4' />
+            <column datatype='string' name='Team' ordinal='5' />
+            <column datatype='string' name='Versus' ordinal='6' />
+            <column datatype='integer' name='X' ordinal='7' />
+            <column datatype='integer' name='Y' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ckg3if1jbz9bl11h1omf1dunx02' name='First100Goals(1).csv' table='[First100Goals(1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Goal Number' ordinal='0' />
+            <column datatype='string' name='Goal Number (group)' ordinal='1' />
+            <column datatype='date' name='Goal Date' ordinal='2' />
+            <column datatype='string' name='Goal Type' ordinal='3' />
+            <column datatype='string' name='Scorer Name' ordinal='4' />
+            <column datatype='string' name='Team' ordinal='5' />
+            <column datatype='string' name='Versus' ordinal='6' />
+            <column datatype='integer' name='X' ordinal='7' />
+            <column datatype='integer' name='Y' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goal Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Goal Number]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Goal Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goal Number (group)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Goal Number (group)]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Goal Number (group)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goal Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Goal Date]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Goal Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goal Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Goal Type]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Goal Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Scorer Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Scorer Name]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Scorer Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Versus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Versus]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Versus</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y]</local-name>
+            <parent-name>[First100Goals(1).csv]</parent-name>
+            <remote-alias>Y</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Goal Number (group)]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Goal Number]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[X]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Y]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='First100Goals(1).csv' datatype='table' name='[__tableau_internal_object_id__].[First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A]' role='measure' type='quantitative' />
+      <column-instance column='[Goal Number (group)]' derivation='CountD' name='[ctd:Goal Number (group):ok]' pivot='key' type='ordinal' />
+      <mapped-images>
+        <mapped-image caption='MicrosoftTeams-image (1)' expression='file:///C:/Users/sxs230040/Downloads/Tableau bootcamp datasets/MicrosoftTeams-image (1).png' name='[MappedImage1]'>
+          <mapping bottom='0' left='0' right='100' top='100' x='[X]' y='[Y]' />
+        </mapped-image>
+      </mapped-images>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[ctd:Goal Number (group):ok]' type='shape'>
+            <map to='circle'>
+              <bucket>100</bucket>
+            </map>
+            <map to='square'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='First100Goals(1).csv' id='First100Goals(1).csv_9CFD7FE8EFEA47658C443E52B8AAAE9A'>
+            <properties context=''>
+              <relation connection='textscan.1ckg3if1jbz9bl11h1omf1dunx02' name='First100Goals(1).csv' table='[First100Goals(1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Goal Number' ordinal='0' />
+                  <column datatype='string' name='Goal Number (group)' ordinal='1' />
+                  <column datatype='date' name='Goal Date' ordinal='2' />
+                  <column datatype='string' name='Goal Type' ordinal='3' />
+                  <column datatype='string' name='Scorer Name' ordinal='4' />
+                  <column datatype='string' name='Team' ordinal='5' />
+                  <column datatype='string' name='Versus' ordinal='6' />
+                  <column datatype='integer' name='X' ordinal='7' />
+                  <column datatype='integer' name='Y' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Football'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='First100Goals(1)' name='federated.1n2ionu05lkulf1h97ids0uc8yjc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1n2ionu05lkulf1h97ids0uc8yjc'>
+            <column aggregation='Sum' datatype='integer' name='[Goal Number]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[X]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Y]' role='measure' type='quantitative' />
+            <column-instance column='[Goal Number]' derivation='None' name='[none:Goal Number:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[X]' derivation='Sum' name='[sum:X:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Y]' derivation='Sum' name='[sum:Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]' field-type='quantitative' max='124' min='-24' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]' field-type='quantitative' max='108' min='-7' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#a9cee6</color>
+                <color>#96c2e1</color>
+                <color>#88b6d9</color>
+                <color>#7aabd0</color>
+                <color>#6d9fc6</color>
+                <color>#6192bc</color>
+                <color>#5787b3</color>
+                <color>#4c7ca9</color>
+                <color>#42709e</color>
+                <color>#386592</color>
+                <color>#2e5a87</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]' />
+              <lod column='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[none:Goal Number:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]</rows>
+        <cols>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]</cols>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>Own goal</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='17.827896418780647'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='17.193687230989951'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='34.970476918280909'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='1.0559540889526566'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>A goal</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='65.004277953405364'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='17.618364418938313'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='78.718342353005582'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='1.4806312769009971'>
+                  <node-reference>
+                    <axis>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Y:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{64DBEA53-A822-4638-AD43-BE245E3E4077}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{550672F1-8974-4568-9C15-879EFAB5A137}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Football'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:X:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[none:Goal Number (group):nk]</field>
+            <field>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[none:Goal Number:ok]</field>
+            <field>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[none:Goal Type:nk]</field>
+            <field>[federated.1n2ionu05lkulf1h97ids0uc8yjc].[sum:Goal Number:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E7679E5F-60B7-4F82-B3E6-48F5C899840E}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{700A2138-5222-4245-8DDD-A5BBA0BF7D0A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Football' width='192'>
+      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
+      FIjJ+H/pQ6jz+a9qmQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
